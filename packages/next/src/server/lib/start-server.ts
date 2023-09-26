@@ -22,7 +22,7 @@ import {
 } from './setup-server-worker'
 import { checkIsNodeDebugging } from './is-node-debugging'
 import { CONFIG_FILES } from '../../shared/lib/constants'
-import chalk from '../../lib/chalk'
+import pc from '../../lib/picocolors'
 
 const debug = setupDebug('next:start-server')
 
@@ -94,8 +94,8 @@ function logStartInfo({
   formatDurationText: string
 }) {
   Log.bootstrap(
-    chalk.bold(
-      chalk.hex('#ad7fa8')(
+    pc.bold(
+      pc.magenta(
         `${`${Log.prefixes.ready} Next.js`} ${process.env.__NEXT_VERSION}`
       )
     )

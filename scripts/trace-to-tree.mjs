@@ -1,6 +1,6 @@
 import fs from 'fs'
 import eventStream from 'event-stream'
-import chalk from 'chalk'
+import chalk from 'next/dist/compiled/picocolors'
 
 const file = fs.createReadStream(process.argv[2])
 

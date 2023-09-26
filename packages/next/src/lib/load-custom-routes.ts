@@ -1,7 +1,7 @@
 import type { NextConfig } from '../server/config'
 import type { Token } from 'next/dist/compiled/path-to-regexp'
 
-import chalk from './chalk'
+import chalk from './picocolors'
 import { escapeStringRegexp } from '../shared/lib/escape-regexp'
 import { tryToParsePath } from './try-to-parse-path'
 import { allowedStatusCodes } from './redirect-status'
